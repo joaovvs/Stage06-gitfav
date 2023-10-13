@@ -76,7 +76,7 @@ export class FavoritesView extends Favorites{
 
     createRow() {
         const tr = document.createElement('tr')
-        tr.innerHTML = `
+        const newLocal = `
         <td class="user">
             <img src="https://github.com/joaovvs.png" alt="Imagem de João Vinícius">
             <a href="https://github.com/joaovvs" target="_blank">
@@ -94,6 +94,7 @@ export class FavoritesView extends Favorites{
             <button class="remove">Remover</button>
         </td>
         `
+        tr.innerHTML = newLocal
 
         return tr
     }
