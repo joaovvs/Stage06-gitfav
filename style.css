@@ -122,6 +122,8 @@ main{
     max-width: 112rem;
     min-width: 112rem;
 
+    height: inherit;
+
 
     display: flex;
     flex-direction: column;
