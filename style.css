@@ -123,6 +123,7 @@ main{
     min-width: 112rem;
 
     height: inherit;
+    max-height: 68.8rem;
 
 
     display: flex;
@@ -268,7 +269,7 @@ td.action
 
     width: 100%;
 
-    height: 100%;
+    height: 62.4rem;
 
     margin-top: -6.4rem;
 
