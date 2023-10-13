@@ -24,6 +24,8 @@ body{
 
 #app{
     padding: 11.5rem 16rem 11.6rem;
+    display: grid;
+    place-content: center;
 }
 
 
@@ -47,6 +49,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    max-width: 112rem;
+    min-width: 112rem;
 
     margin-bottom: 8.7rem;
 }
@@ -114,97 +119,185 @@ main{
     border: .3rem solid var(--plataform-table-border);
 
     height: 68.8rem;
-    overflow-y: scroll;
+    max-width: 112rem;
+    min-width: 112rem;
+
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
+.table-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+table *{
+    font-size: 2rem;
+}
 
 table{
-
-    border-collapse: collapse;    
-
-    width: 100%;
-    
+    border-collapse: collapse;
     text-align: left;
 
-    gap: 1.9rem;
+    
 }
 
-table * {
+table tr{
+    display: flex;
+    align-items: center;
+    border: 1px solid #4A808C;
+
+}
+
+table th{
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+    font-weight: bold;
     color: var(--platform-aliases-titles);
-}
-
-th{
     background: var(--platform-bg-titles);
-    
-    font-size: 2rem;
-    color: var(--platform-aliases-titles);
-
-    padding: 1.6rem 2.4rem 1.6rem 4rem; 
-
-    text-align: left;
-
-
-}
-
-
-table tr:first-child{
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 1rem;
-}
-
-table tr:nth-child(even){
-    background-color: #06181C;
-    border: 1px solid var(--plataform-table-border);
-}
-
-table tr:nth-child(odd) {
-    background: rgb(6, 22, 27, 0.5);
 
 }
 
 table td{
-    text-decoration: none;
-    padding: 2.4rem 2.4rem 2.4rem 4rem;
+
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+    color: var(--platform-aliases-titles);
+    text-align: left;
+
+
 }
+
+table tr:nth-child(odd) {
+    background: rgba(6, 22, 27, 0.50);
+}
+
+
+
+
 
 table td.user{
     display: flex;
-    flex-direction: row;
-    align-items: center;
 
+    align-items: center;
     gap: 1.6rem;
 
+
 }
 
-td img{
+table td.user img{
+    background: #c4c4c4;
+    width: 5.4rem;
     border-radius: 50%;
-    width: 5.6rem;
-    height: 5.6rem;
-
-    object-fit: cover;
 }
 
-td.user a{
+table td.user a{
     text-decoration: none;
     color: var(--platform-aliases-titles);
-
 }
 
-td.user a p{
+table td.user a p{
     font-weight: bold;
-
-    margin-bottom: .8rem;
 }
 
-td .remove{
-    border: none;
+th.user,
+td.user{
+    display: flex;
+    width: 50.4rem;
+}
+
+th.repositories,
+td.repositories{
+    display: flex;
+    width: 21.9rem;
+}
+
+th.followers,
+td.followers
+{
+    display: flex;
+    width: 21.9rem;
+}
+
+
+th.action,
+td.action
+{
+    display: flex;
+    width: 17.8rem;
+}
+
+.remove{
     background: none;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 160%; 
+    border: none;
     color: var(--semantic-clors-danger-light);
+    font-weight: bold;
 
     cursor: pointer;
 }
 
+
+.scroll-bar{
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+   /* display: flex;*/
+  /*  flex-direction: column;*/
+    width: 100%;
+}
+
+.emptyTable *{
+    color: #4E5455;
+
+    font-size: 4rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.emptyTable{
+    display:flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 6rem;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+    margin-top: -6.4rem;
+
+}
+
+.emptyTable img{
+    width: 13.2rem;
+}
+
+/*customização do scroll bar*/
+
+
+::-webkit-scrollbar{
+    position: fixed;
+    top: 6.4rem;
+    right: .8rem;
+    width: .6rem;
+    background: transparent;
+
+
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background: #4A808C;
+    border-radius: 1rem;
+    width: .6rem;
+
+    
+}
 

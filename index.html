@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="./js/main.js" type="module" defer></script>
 </head>
 <body>
 
@@ -28,52 +31,24 @@
         </header>
        
         <main>
+            <div class="table-header">
             <table>
                 <thead>
-                    <th>Usuário</th>
-                    <th>Repositories</th>
-                    <th>Followers</th>
-                    <th>Ação</th>
+                    <th class="user">Usuário</th>
+                    <th class="repositories">Repositories</th>
+                    <th class="followers">Followers</th>
+                    <th class="action">Ação</th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="user">
-                            <img src="https://github.com/joaovvs.png" alt="Imagem de João Vinícius">
-                            <a href="https://github.com/joaovvs" target="_blank">
-                                <p>João Vinícius</p>
-                                <span>/joaovvs</span>
-                            </a>
-                        </td>
-                        <td class="repositories">
-                            1234
-                        </td>
-                        <td class="followers">
-                            1234
-                        </td>
-                        <td>
-                            <button class="remove">Remover</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="user">
-                            <img src="https://github.com/maykbrito.png" alt="Imagem de Mayk Brito">
-                            <a href="https://github.com/maykbrito" target="_blank">
-                                <p>Mayke Brito</p>
-                                <span>/maykebrito</span>
-                            </a>
-                        </td>
-                        <td class="repositories">
-                            1234
-                        </td>
-                        <td class="followers">
-                            1234
-                        </td>
-                        <td>
-                            <button class="remove">Remover</button>
-                        </td>
-                    </tr>
-
-                </main>
+            </table>
+            </div>
+            <div class="scroll-bar">
+                <table><tbody>
+                 
+                </tbody></table>
+            </div>
+            
+            
+        </main>
 
     </div>
     
