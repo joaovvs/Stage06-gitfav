@@ -25,6 +25,6 @@ O desafio consiste na criação de uma lista para favoritar perfis do github.
 
 ## Stack utilizada
 
-**Front-end:** JavaScript, HTML e CSS
+**Front-end:** JavaScript, HTML5 e CSS3
 
 
